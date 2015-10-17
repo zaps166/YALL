@@ -1,0 +1,20 @@
+Program MaxSum
+
+Fn main 0
+	Ret (maksymalnaSuma)
+End
+
+Fn maksymalnaSuma 0
+	Array A {31,-41,59,26,-53,58,97,-93,-21,84}
+	Set dotadNaj 0
+	Loop d 0 A.size -1 1
+		Set suma 0
+		Loop g d A.size -1 1
+			Add suma suma A[g]
+			If suma > dotadNaj
+				Set dotadNaj suma
+			End
+		End
+	End
+	Ret dotadNaj
+End

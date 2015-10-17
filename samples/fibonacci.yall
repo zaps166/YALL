@@ -1,0 +1,15 @@
+Program Fibonacci
+
+Fn main 0
+	Ret (fibonacci,30)
+End
+
+Fn fibonacci 1
+	Set n args[0]
+	Set b 1
+	Loop i 0 n -2 1
+		Add b b a
+		Sub a b a
+	End
+	Ret b
+End

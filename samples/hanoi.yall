@@ -1,0 +1,14 @@
+Program Hanoi
+
+Fn hanoi 4
+	If args[0] > 0
+		Sub args[0] args[0] 1
+		Call (hanoi,args[0],args[1],args[3],args[2])
+		Putc args[1] 32 '-' '>' 32 args[2] 10
+		Call (hanoi,args[0],args[2],args[1],args[3])
+	End
+End
+
+Fn main 0
+	Call (hanoi,3,'A','B','C')
+End

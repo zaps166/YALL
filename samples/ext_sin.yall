@@ -1,0 +1,7 @@
+Program ExternSin
+
+ExternFn sin 1
+
+Fn main 0
+	Ret (sin,0.5)
+End
